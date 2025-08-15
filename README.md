@@ -189,7 +189,7 @@ python examples/align_to_SMPL_seq.py examples/samples/amass_seq/CMU_01_01.npz -D
 You can visualize the result with:
 
 ```shell
-python examples/skel_sequence.py output/CMU_01_01/CMU_01_01_skel.pkl -z 
+python examples/skel_sequence.py output/CMU_01_01/CMU_01_01_skel.pkl  --headless --out skel_out.mp4 -z
 ```
 
 You can download more SMPL sequences of this kind from the [AMASS](https://amass.is.tue.mpg.de/) Download page, and selecting the `SMPL+H G` sequences.

@@ -90,6 +90,8 @@ def load_smpl_seq(smpl_seq_path, gender=None, straighten_hands=False):
 
     # Get betas 
     betas = data_dict['betas'][..., :10] # Keep only the 10 first betas
+    if betas.shape[0] != 1:
+        betas = betas.mean(axis=0, keepdims=True).astype(np.float32)
     if len(betas.shape) == 1 and len(poses.shape) == 2:
         betas = betas[None, :] # Add a batch dimension
     data_fixed['betas'] = betas
