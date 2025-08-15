@@ -3,3 +3,5 @@ models/
 *.egg-info
 *__pycache__/
 imgui.ini
+SMPL_python_v.1.1.0.zip
+skel_models_v1.1.zip
